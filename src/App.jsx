@@ -6,8 +6,22 @@ import Asad from "./asad";
 import Checkbox from "./checkbox";
 import Clock from "./assets/Clock";
 import College from "./college";
+import Counter from "./Counter";
 
 const App = () => {
+  const [count,setCount]=useState(0);
+  const [data,setData]=useState(0);
+  const [display,setDisplay]=useState(true)
+
+
+
+
+
+
+
+
+
+
   const [color, setColor] = useState("green");
   const collegeData = [
     {
@@ -66,6 +80,28 @@ const App = () => {
       ))
 
       }
+      <div>
+       {
+        display?  <Counter count={count} data={data}/>:null
+       }
+        <button onClick={()=>setCount(count+1)}>Counter</button>
+        <br />
+        <button onClick={()=>setData(data+1)}>Data</button>
+        <br />
+        <button onClick={()=>setDisplay(display)}>Toggle</button>
+
+      </div>
+      
+
+
+
+
+
+
+
+
+
+
     </>
   );
 };
