@@ -15,7 +15,7 @@ const Counter = ({ count,data }) => {
 
   useEffect(() => {
     handleCounter();
-  }, []);
+  }, [count]);
 
   return (
     <div>
