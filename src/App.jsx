@@ -57,6 +57,17 @@ function App() {
         placeholder="update city"
         onChange={(event) => handleCity(event.target.value)}
       />
+
+
+
+
+
+
+
+
+
+
+      
       <input
         type="text"
         placeholder="update country"
